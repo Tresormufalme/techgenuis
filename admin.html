@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin | TechGenuis</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="title">Dashboard Admin - TechGenuis</h1>
+
+      <div class="filters">
+        <label for="filtre">Filtrer par Track :</label>
+        <select id="filtre">
+          <option value="all">Tous</option>
+          <option value="frontend">Front-End</option>
+          <option value="excel">Excel</option>
+        </select>
+      </div>
+
+      <div id="candidatsList" class="list-candidats">
+        <!-- Les candidatures apparaîtront ici -->
+      </div>
+    </div>
+    <div class="stats">
+      <h2>Statistiques générales 📈</h2>
+      <p>Total : <span id="stat-total">...</span></p>
+      <p>Front-End : <span id="stat-frontend">...</span></p>
+      <p>Excel : <span id="stat-excel">...</span></p>
+      <p>Confirmés : <span id="stat-confirmes">...</span></p>
+    </div>
+
+    <!-- Firebase + Scripts -->
+    <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore-compat.js"></script>
+    <script src="firebase-config.js"></script>
+    <script src="admin.js"></script>
+  </body>
+</html>

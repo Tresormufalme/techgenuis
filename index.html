@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Inscription | TechGenuis Formation</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="title">TechGenuis - Inscription à la Formation</h1>
+      <form id="inscriptionForm">
+        <input type="text" name="nom" placeholder="Nom complet" required />
+        <input type="email" name="email" placeholder="Email" required />
+        <input type="tel" name="telephone" placeholder="Téléphone" required />
+
+        <select name="track" required>
+          <option value="">Choisissez un track</option>
+          <option value="frontend">
+            Développement Web Partie 1 (Front-End)
+          </option>
+          <option value="excel">Excel pour la Productivité</option>
+        </select>
+
+        <button type="submit">S'inscrire</button>
+      </form>
+      <p class="success-message" id="messageSuccess" style="display: none">
+        Merci ! Votre inscription a été envoyée. 📩
+      </p>
+    </div>
+    <!-- Firebase SDK -->
+    <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore-compat.js"></script>
+
+    <!-- Config & Script -->
+    <script src="firebase-config.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

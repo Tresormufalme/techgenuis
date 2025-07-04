@@ -1,0 +1,200 @@
+/* Import Google Fonts */
+body {
+  margin: 0;
+  font-family: "Inter", sans-serif;
+  background: linear-gradient(145deg, #121212, #1e1e2f);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container {
+  background: #2c2f48;
+  padding: 3rem;
+  border-radius: 20px;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.4);
+  max-width: 400px;
+  width: 100%;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.title {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 1.8rem;
+  color: #f97316;
+}
+
+form input,
+form select {
+  width: 100%;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border: none;
+  border-radius: 10px;
+  font-size: 1rem;
+  background: #1e2235;
+  color: white;
+  transition: all 0.3s ease;
+}
+
+form input:focus,
+form select:focus {
+  outline: none;
+  background: #30365c;
+  box-shadow: 0 0 10px #f97316;
+}
+
+button {
+  width: 100%;
+  padding: 1rem;
+  background: #f97316;
+  color: white;
+  font-weight: 600;
+  border: none;
+  border-radius: 10px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background: #fb923c;
+}
+
+.success-message {
+  text-align: center;
+  margin-top: 1rem;
+  color: #22c55e;
+  font-weight: bold;
+  animation: bounce 1s ease;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes bounce {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+.filters {
+  margin-bottom: 1.5rem;
+}
+
+.filters select {
+  padding: 0.5rem;
+  border-radius: 8px;
+  border: none;
+  background: #1e2235;
+  color: white;
+}
+
+.list-candidats {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.candidat-card {
+  background: #1e2235;
+  padding: 1.2rem;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.05);
+  transition: transform 0.3s ease;
+}
+
+.candidat-card:hover {
+  transform: scale(1.02);
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.track-badge {
+  background: #f97316;
+  padding: 0.3rem 0.7rem;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  color: white;
+  font-weight: bold;
+}
+
+.btn-confirmer {
+  margin-top: 1rem;
+  background: #22c55e;
+  border: none;
+  color: white;
+  padding: 0.6rem 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.btn-confirmer:hover {
+  background: #16a34a;
+}
+
+.status {
+  margin-top: 0.5rem;
+  font-weight: bold;
+  color: #38bdf8;
+}
+.message-area {
+  width: 100%;
+  margin-top: 1rem;
+  padding: 0.8rem;
+  border-radius: 8px;
+  background: #10142a;
+  color: white;
+  border: 1px solid #f97316;
+  resize: none;
+  font-family: inherit;
+}
+
+.btn-message {
+  margin-top: 0.5rem;
+  background: #3b82f6;
+  border: none;
+  color: white;
+  padding: 0.6rem 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.btn-message:hover {
+  background: #2563eb;
+}
+.stats {
+  background: #1a1d2f;
+  padding: 1.2rem;
+  border-radius: 10px;
+  margin-bottom: 2rem;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.05);
+}
+.stats h2 {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  color: #22c55e;
+}
+.stats p {
+  margin: 0.3rem 0;
+}
